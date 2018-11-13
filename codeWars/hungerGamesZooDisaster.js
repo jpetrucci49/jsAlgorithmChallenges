@@ -81,3 +81,17 @@ OUTPUT
     as the input string.
     total output should appear ['lion,sheep,grass,bug', 'lion eats sheep', 'bug eats grass', 'lion,bug']
 */
+// Store the foodChain in an object
+const foodChain = {
+  antelope: ['grass'],
+  'big-fish': ['little-fish'],
+  bug: ['leaves'],
+  bear: ['big-fish', 'bug', 'chicken', 'cow', 'leaves', 'sheep'],
+  chicken: ['bug'],
+  cow: ['grass'],
+  fox: ['chicken', 'sheep'],
+  giraffe: ['leaves'],
+  lion: ['antelope', 'cow'],
+  panda: ['leaves'],
+  sheep: ['grass']
+};
