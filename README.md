@@ -8,3 +8,4 @@ These JavaScript challenges will be taken from multiple online resources, and st
 ### CodeWars:
 
 - [The Hunger Games - Zoo Disaster!](./codeWars/hungerGamesZooDisaster.js) - 5 kyu
+- [Poker cards encoder/decoder](./codeWars/pokerCardsEncoderDecoder.js) - 5 kyu
