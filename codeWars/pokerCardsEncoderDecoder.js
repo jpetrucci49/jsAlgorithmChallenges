@@ -44,8 +44,24 @@ You may solve my other kata which takes subject of term 'poker' Poker cards redu
   Output will be an Array of the inverse. If input is card values, return card numbers. If it is numbers, return values.
 */
 function cardsConverter(input){
-  // Do code
-  return convertedArray
+  // First, return null if input is not an array.
+  if (!Array.isArray(input)){
+    return null
+  }
+  // Otherwise, if input is an empty array return an empty array.
+  if (input.length === 0){
+    return []
+  }
+  // List the faces and suits for the cards.
+  const faces = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 'T', 'J', 'Q', 'K'];
+  const suits = ['c', 'd', 'h', 's'];
+  // Function expressioon to generate a deck. Takes one parameter - desired card.
+  const deck = (card) => {
+    // Declare variable to store cards.
+    const fullDeck = [];
+    
+  }
+  return 'endFunction'
 }
 console.log(cardsConverter([0, 1, 51]))
 // cardsConverter([0, 1, 51]) should return ['Ac', '2c', 'ks']
