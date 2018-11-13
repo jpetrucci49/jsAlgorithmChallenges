@@ -66,9 +66,17 @@ function cardsConverter(input){
         fullDeck.push(faces[j]+suits[i]);
       }
     }
+    // If the provided card matches a fullDeck index, return that value.
+    // Else if the provided cards index returns anything except -1, return that index.
+    // Otherwise, just return the fullDeck
+    if (fullDeck[card]){
+      return fullDeck[card]
+    } else if(fullDeck.indexOf(card) > -1){
+      return fullDeck.indexOf(card)
+    }
     return fullDeck
   }
-  return deck()
+  return deck(2)
 }
 console.log(cardsConverter([0, 1, 51]))
 // cardsConverter([0, 1, 51]) should return ['Ac', '2c', 'ks']
