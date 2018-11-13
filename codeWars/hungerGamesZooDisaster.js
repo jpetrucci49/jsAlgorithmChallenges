@@ -70,3 +70,14 @@ INPUT
 "fox"
 OUTPUT
 ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
+*/
+
+// Steps broken down
+/*
+  Fistly, knowing input structure. It will be a coma separated string. No spaces between. 'lion,sheep,grass,bug'
+  Output will be an array. index 0 will be the input string.
+    Index 1 through the Second to last will be the order of feasting.
+    In the format of 'predator eats prey'. The last index will be a coma separated string in the same format
+    as the input string.
+    total output should appear ['lion,sheep,grass,bug', 'lion eats sheep', 'bug eats grass', 'lion,bug']
+*/
