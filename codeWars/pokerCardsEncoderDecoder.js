@@ -39,3 +39,14 @@ if input is not defined or is not and array return null, if is empty array retur
 
 You may solve my other kata which takes subject of term 'poker' Poker cards reducer
 */
+/*
+  Input will be an Array of card values, or card numbers.
+  Output will be an Array of the inverse. If input is card values, return card numbers. If it is numbers, return values.
+*/
+function cardsConverter(input){
+  // Do code
+  return convertedArray
+}
+console.log(cardsConverter([0, 1, 51]))
+// cardsConverter([0, 1, 51]) should return ['Ac', '2c', 'ks']
+// cardsConverter(['Ac', '2c', 'ks']) should return [0, 1, 51]
