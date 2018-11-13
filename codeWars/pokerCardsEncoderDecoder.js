@@ -59,9 +59,16 @@ function cardsConverter(input){
   const deck = (card) => {
     // Declare variable to store cards.
     const fullDeck = [];
-    
+    // Loop through all suits, then all faces.
+    // For each face within each suit, push that card to the fullDeck
+    for (let i = 0; i < suits.length; i++){
+      for (let j = 0; j < faces.length; j++){
+        fullDeck.push(faces[j]+suits[i]);
+      }
+    }
+    return fullDeck
   }
-  return 'endFunction'
+  return deck()
 }
 console.log(cardsConverter([0, 1, 51]))
 // cardsConverter([0, 1, 51]) should return ['Ac', '2c', 'ks']
