@@ -76,8 +76,27 @@ function cardsConverter(input){
     }
     return fullDeck
   }
-  return deck(2)
+  // to return the correct result, the input array needs to be iterated as well.
+  // push the result of each card conversion to an empty array.
+  const result = [];
+  for (let i = 0; i < input.length; i++){
+    result.push(deck(input[i]));
+  }
+  // The result must be sorted by it's position in the deck.
+  return result.sort((a,b) => {
+    // If the result is already array position, just return a-b for ascending order.
+    // If the result is a string, this means the result is the symbolic vlaue of the card.
+    // Set the element to be the value of it's index for sorting.
+    if (typeof a === 'string'){
+      a = deck().indexOf(a);
+    }
+    if (typeof b === 'string'){
+      b = deck().indexOf(b);
+    }
+    return a-b
+  })
 }
-console.log(cardsConverter([0, 1, 51]))
-// cardsConverter([0, 1, 51]) should return ['Ac', '2c', 'ks']
-// cardsConverter(['Ac', '2c', 'ks']) should return [0, 1, 51]
+console.log(cardsConverter([0, 51, 1]))
+console.log(cardsConverter(['Ac', 'Ks', '2c']))
+// cardsConverter([0, 51, 1]) should return ['Ac', '2c', 'Ks']
+// cardsConverter(['Ac', 'Ks', '2c']) should return [0, 1, 51]
