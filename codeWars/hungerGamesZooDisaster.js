@@ -84,17 +84,27 @@ OUTPUT
 const whoEatsWho = (zoo) => {
   // Store the foodChain in an object
   const foodChain = {
-    antelope: ['grass'],
-    'big-fish': ['little-fish'],
-    bug: ['leaves'],
-    bear: ['big-fish', 'bug', 'chicken', 'cow', 'leaves', 'sheep'],
-    chicken: ['bug'],
-    cow: ['grass'],
-    fox: ['chicken', 'sheep'],
-    giraffe: ['leaves'],
-    lion: ['antelope', 'cow'],
-    panda: ['leaves'],
-    sheep: ['grass']
+    /*
+    Move animals into a sub object, and add a method to determine firstly:
+    if a predator has prey. secondly:
+    if a predator is beside their prey
+    */
+    animals: {
+      antelope: ['grass'],
+      'big-fish': ['little-fish'],
+      bug: ['leaves'],
+      bear: ['big-fish', 'bug', 'chicken', 'cow', 'leaves', 'sheep'],
+      chicken: ['bug'],
+      cow: ['grass'],
+      fox: ['chicken', 'sheep'],
+      giraffe: ['leaves'],
+      lion: ['antelope', 'cow'],
+      panda: ['leaves'],
+      sheep: ['grass']
+    },
+    animalEats(predator, prey){
+      // comparator for if animals are predator or prey. will return truthy falsy
+    }
   };
   // input will need to be itterable. split into an Array.
   let animals = zoo.split(',')
@@ -104,7 +114,13 @@ const whoEatsWho = (zoo) => {
   let i = 0
   while (i < animals.length){
     console.log('loop', i)
-
+    if (/*this animal, eats the animal to the left*/true) {
+      // Delete the animal to the left,
+      // move i back to start
+    } else if (/*this animal, eats the animal to the right*/false) {
+      // Delete the animal to the right
+      // move i back to start
+    }
     i++
   }
   return [zoo]
