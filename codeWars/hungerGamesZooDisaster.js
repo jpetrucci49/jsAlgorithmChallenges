@@ -104,20 +104,27 @@ const whoEatsWho = (zoo) => {
     },
     animalEats(predator, prey){
       // comparator for if animals are predator or prey. will return truthy falsy
+      if (this.animals[predator]) {
+        return true
+      } else {
+        return false
+      }
     }
   };
   // input will need to be itterable. split into an Array.
-  let animals = zoo.split(',')
+  let animals = zoo.split(',');
   // Loop through the animals in the list.
   // Rules state animals on the left eat first, and animals eat to the left first.
   // This means every time an animal eats, the loop needs to hop back to check if prefious animal can eat right, before it is eaten.
-  let i = 0
+  let i = 0;
   while (i < animals.length){
     console.log('loop', i)
-    if (/*this animal, eats the animal to the left*/true) {
+    if (foodChain.animalEats(animals[i], animals[i-1])) {
+      console.log('the animal is in the array.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
       // Delete the animal to the left,
       // move i back to start
-    } else if (/*this animal, eats the animal to the right*/false) {
+    } else if (!foodChain.animalEats(animals[i], animals[i-1])) {
+      console.log('the animal has no prey.', 'animal:', animals[i]);
       // Delete the animal to the right
       // move i back to start
     }
@@ -125,5 +132,5 @@ const whoEatsWho = (zoo) => {
   }
   return [zoo]
 };
-console.log(whoEatsWho('fox,bug,chicken,grass,sheep'))
+console.log(whoEatsWho('fox,bug,chicken,grass,sheep'));
 // expected: ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
