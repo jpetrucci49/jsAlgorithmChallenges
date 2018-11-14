@@ -81,17 +81,33 @@ OUTPUT
     as the input string.
     total output should appear ['lion,sheep,grass,bug', 'lion eats sheep', 'bug eats grass', 'lion,bug']
 */
-// Store the foodChain in an object
-const foodChain = {
-  antelope: ['grass'],
-  'big-fish': ['little-fish'],
-  bug: ['leaves'],
-  bear: ['big-fish', 'bug', 'chicken', 'cow', 'leaves', 'sheep'],
-  chicken: ['bug'],
-  cow: ['grass'],
-  fox: ['chicken', 'sheep'],
-  giraffe: ['leaves'],
-  lion: ['antelope', 'cow'],
-  panda: ['leaves'],
-  sheep: ['grass']
+const whoEatsWho = (zoo) => {
+  // Store the foodChain in an object
+  const foodChain = {
+    antelope: ['grass'],
+    'big-fish': ['little-fish'],
+    bug: ['leaves'],
+    bear: ['big-fish', 'bug', 'chicken', 'cow', 'leaves', 'sheep'],
+    chicken: ['bug'],
+    cow: ['grass'],
+    fox: ['chicken', 'sheep'],
+    giraffe: ['leaves'],
+    lion: ['antelope', 'cow'],
+    panda: ['leaves'],
+    sheep: ['grass']
+  };
+  // input will need to be itterable. split into an Array.
+  let animals = zoo.split(',')
+  // Loop through the animals in the list.
+  // Rules state animals on the left eat first, and animals eat to the left first.
+  // This means every time an animal eats, the loop needs to hop back to check if prefious animal can eat right, before it is eaten.
+  let i = 0
+  while (i < animals.length){
+    console.log('loop', i)
+
+    i++
+  }
+  return [zoo]
 };
+console.log(whoEatsWho('fox,bug,chicken,grass,sheep'))
+// expected: ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
