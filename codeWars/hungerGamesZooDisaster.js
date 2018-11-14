@@ -119,7 +119,6 @@ const whoEatsWho = (zoo) => {
   // This means every time an animal eats, the loop needs to hop back to check if prefious animal can eat right, before it is eaten.
   let i = 0;
   while (i < animals.length){
-    console.log('loop', i);
     if (foodChain.animalEats(animals[i], animals[i-1])) {
       // Push predator action to prey Array. Interpolaton to concat the string.
       prey.push(`${animals[i]} eats ${animals[i-1]}`);
@@ -140,9 +139,7 @@ const whoEatsWho = (zoo) => {
   // Join 3 portions of the result, original input, eaten actions, and remaining animals together into an array
   prey.unshift(zoo)
   prey.push(animals.join(','))
-  console.log(prey)
-  console.log(animals)
   return prey
 };
-console.log(whoEatsWho('fox,bug,chicken,grass,sheep'));
+console.log('result', whoEatsWho('fox,bug,chicken,grass,sheep'));
 // expected: ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
