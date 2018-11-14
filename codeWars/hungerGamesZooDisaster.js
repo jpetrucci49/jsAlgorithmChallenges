@@ -104,8 +104,14 @@ const whoEatsWho = (zoo) => {
     },
     animalEats(predator, prey){
       // comparator for if animals are predator or prey. will return truthy falsy
+      // if animals[predator] does not exist, immediately return false.
       if (this.animals[predator]) {
-        return true
+        // if animals[predator] does exist, does the prey exist within it's Array of prey?
+        // if so, return true, if not return false.
+        if (this.animals[predator].indexOf(prey) > -1){
+          return true
+        }
+        return false
       } else {
         return false
       }
@@ -120,11 +126,11 @@ const whoEatsWho = (zoo) => {
   while (i < animals.length){
     console.log('loop', i)
     if (foodChain.animalEats(animals[i], animals[i-1])) {
-      console.log('the animal is in the array.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
+      console.log('the animal can eat left.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
       // Delete the animal to the left,
       // move i back to start
-    } else if (!foodChain.animalEats(animals[i], animals[i-1])) {
-      console.log('the animal has no prey.', 'animal:', animals[i]);
+    } else if (foodChain.animalEats(animals[i], animals[i+1])) {
+      console.log('the animal can eat right.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
       // Delete the animal to the right
       // move i back to start
     }
