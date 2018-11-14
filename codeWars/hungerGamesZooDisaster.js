@@ -123,17 +123,22 @@ const whoEatsWho = (zoo) => {
     if (foodChain.animalEats(animals[i], animals[i-1])) {
       // Push predator action to prey Array. Interpolaton to concat the string.
       prey.push(`${animals[i]} eats ${animals[i-1]}`)
-      console.log(prey)
+      animals.splice(i-1, 1)
+      i = -1
       // Delete the animal to the left,
       // move i back to start
     } else if (foodChain.animalEats(animals[i], animals[i+1])) {
       // Push predator action to prey Array. Interpolaton to concat the string.
       prey.push(`${animals[i]} eats ${animals[i+1]}`)
+      animals.splice(i+1, 1)
+      i = -1
       // Delete the animal to the right
       // move i back to start
     }
     i++;
   }
+  console.log(prey)
+  console.log(animals)
   return [zoo]
 };
 console.log(whoEatsWho('fox,bug,chicken,grass,sheep'));
