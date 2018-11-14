@@ -111,7 +111,9 @@ const whoEatsWho = (zoo) => {
     }
   };
   // input will need to be itterable. split into an Array.
-  let animals = zoo.split(',');
+  const animals = zoo.split(',');
+  // Array to store predators actions against prey
+  const prey = [];
   // Loop through the animals in the list.
   // Rules state animals on the left eat first, and animals eat to the left first.
   // This means every time an animal eats, the loop needs to hop back to check if prefious animal can eat right, before it is eaten.
@@ -119,11 +121,14 @@ const whoEatsWho = (zoo) => {
   while (i < animals.length){
     console.log('loop', i);
     if (foodChain.animalEats(animals[i], animals[i-1])) {
-      console.log('the animal can eat left.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
+      // Push predator action to prey Array. Interpolaton to concat the string.
+      prey.push(`${animals[i]} eats ${animals[i-1]}`)
+      console.log(prey)
       // Delete the animal to the left,
       // move i back to start
     } else if (foodChain.animalEats(animals[i], animals[i+1])) {
-      console.log('the animal can eat right.', 'animal:', animals[i], 'prey:', foodChain.animals[animals[i]]);
+      // Push predator action to prey Array. Interpolaton to concat the string.
+      prey.push(`${animals[i]} eats ${animals[i+1]}`)
       // Delete the animal to the right
       // move i back to start
     }
