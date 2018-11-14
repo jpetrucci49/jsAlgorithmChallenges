@@ -122,24 +122,27 @@ const whoEatsWho = (zoo) => {
     console.log('loop', i);
     if (foodChain.animalEats(animals[i], animals[i-1])) {
       // Push predator action to prey Array. Interpolaton to concat the string.
-      prey.push(`${animals[i]} eats ${animals[i-1]}`)
-      animals.splice(i-1, 1)
-      i = -1
+      prey.push(`${animals[i]} eats ${animals[i-1]}`);
+      animals.splice(i-1, 1);
+      i = -1;
       // Delete the animal to the left,
       // move i back to start
     } else if (foodChain.animalEats(animals[i], animals[i+1])) {
       // Push predator action to prey Array. Interpolaton to concat the string.
-      prey.push(`${animals[i]} eats ${animals[i+1]}`)
-      animals.splice(i+1, 1)
-      i = -1
+      prey.push(`${animals[i]} eats ${animals[i+1]}`);
+      animals.splice(i+1, 1);
+      i = -1;
       // Delete the animal to the right
       // move i back to start
     }
     i++;
-  }
+  };
+  // Join 3 portions of the result, original input, eaten actions, and remaining animals together into an array
+  prey.unshift(zoo)
+  prey.push(animals.join(','))
   console.log(prey)
   console.log(animals)
-  return [zoo]
+  return prey
 };
 console.log(whoEatsWho('fox,bug,chicken,grass,sheep'));
 // expected: ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
