@@ -96,7 +96,13 @@ function cardsConverter(input){
     return a-b
   })
 }
-console.log(cardsConverter([0, 51, 1]))
-console.log(cardsConverter(['Ac', 'Ks', '2c']))
+console.log(cardsConverter([0, 51, 1]));
+console.log(cardsConverter(['Ac', 'Ks', '2c']));
 // cardsConverter([0, 51, 1]) should return ['Ac', '2c', 'Ks']
 // cardsConverter(['Ac', 'Ks', '2c']) should return [0, 1, 51]
+
+// Tests
+const test = require('../common/test.js');
+
+test(cardsConverter([0, 51, 1]), ['Ac', '2c', 'Ks']);
+test(cardsConverter(['Ac', 'Ks', '2c']), [0, 1, 51]);
