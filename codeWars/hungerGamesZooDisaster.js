@@ -143,3 +143,8 @@ const whoEatsWho = (zoo) => {
 };
 console.log('result', whoEatsWho('fox,bug,chicken,grass,sheep'));
 // expected: ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]
+
+// Tests
+const test = require('../common/test.js');
+
+test(whoEatsWho('fox,bug,chicken,grass,sheep'), ["fox,bug,chicken,grass,sheep", "chicken eats bug", "fox eats chicken", "sheep eats grass", "fox eats sheep", "fox"]);
