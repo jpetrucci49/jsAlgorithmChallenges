@@ -3,12 +3,12 @@ module.exports = function (result, expected, message) {
 
     if (Array.isArray(result) && Array.isArray(expected)) {
         for (let i = 0; i < result.length && i < expected.length; i++) {
-            if (result[i] !== expected[i]) {
+            if (result[i] != expected[i]) {
                 success = false;
                 break;
             }
         }
-    } else if (result !== expected) {
+    } else if (result != expected) {
         success = false;
     }
 
