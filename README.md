@@ -22,3 +22,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [Brackets](Codility/brackets.js) - 100%
 - [CountDiv](Codility/countDiv.js) - 100%
 - [CyclicRotation](Codility/cyclicRotation.js) - 100%
+- [Distinct](Codility/distinct.js) - 100%
+- [Dominator](Codility/dominator.js) - 100%
