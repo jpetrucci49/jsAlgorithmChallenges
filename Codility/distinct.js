@@ -36,6 +36,6 @@ each element of array A is an integer within the range [−1,000,000..1,000,000]
 // This is actually slower at O(N**2) because of the call to ar.indexOf() re-looping the array.
 const distinct = (A) => A.filter((e, i, ar) => ar.indexOf(e) === i).length;
 
-const test = require('../../common/test.js');
+const test = require('../common/test.js');
 
 test(distinct([2, 1, 1, 2, 3, 1]), 3); // The number of unique values in the string is 3. 1, 2 and 3.
