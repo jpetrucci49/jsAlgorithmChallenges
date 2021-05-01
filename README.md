@@ -24,3 +24,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [CyclicRotation](Codility/cyclicRotation.js) - 100%
 - [Distinct](Codility/distinct.js) - 100%
 - [Dominator](Codility/dominator.js) - 100%
+- [Fish](Codility/fish.js) - 100%
+- [GenomicRangeQuery](Codility/genomicRangeQuery.js) - 100%
