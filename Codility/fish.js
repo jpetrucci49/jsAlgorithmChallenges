@@ -85,4 +85,4 @@ function fish(A, B) {
 
 const test = require('../common/test.js');
 
-test(fish([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]), 2); // The value is 3 because it occurs in 5 out of 8 elements of A.
+test(fish([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]), 2); // Fish 1 eats fish 2, then it eats fish 3 too. Finally, fish 4 eats fish 1. Fish 0 and 4 never meet and therefore stay alive.
