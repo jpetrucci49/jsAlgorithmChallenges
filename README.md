@@ -26,3 +26,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [Dominator](Codility/dominator.js) - 100%
 - [Fish](Codility/fish.js) - 100%
 - [GenomicRangeQuery](Codility/genomicRangeQuery.js) - 100%
+- [maxProductOfThree](Codility/maxProductOfThree.js) - 100%
+- [maxProfit](Codility/maxProfit.js) - 100%
