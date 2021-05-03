@@ -28,3 +28,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [GenomicRangeQuery](Codility/genomicRangeQuery.js) - 100%
 - [maxProductOfThree](Codility/maxProductOfThree.js) - 100%
 - [maxProfit](Codility/maxProfit.js) - 100%
+- [minAvgTwoSlice](Codility/minAvgTwoSlice.js) - 100%
+- [missingInteger](Codility/missingInteger.js) - 100%
