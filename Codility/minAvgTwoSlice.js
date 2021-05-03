@@ -59,7 +59,7 @@ each element of array A is an integer within the range [−10,000..10,000].
 
 /************ REFACTOR with REDUCE *****************/
 
-function solution(A) {
+function minAvgTwoSlice(A) {
   return A.reduce(
     (a, e, i, ar) => {
       if ((e + ar[i + 1]) / 2 < a.min) {
@@ -78,4 +78,4 @@ function solution(A) {
 
 const test = require('../common/test.js');
 
-test(solution([4, 2, 2, 5, 1, 5, 8]), 1); // index for start of minAvgSlice is 1
+test(minAvgTwoSlice([4, 2, 2, 5, 1, 5, 8]), 1); // index for start of minAvgSlice is 1
