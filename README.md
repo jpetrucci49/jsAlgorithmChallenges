@@ -30,3 +30,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [maxProfit](Codility/maxProfit.js) - 100%
 - [minAvgTwoSlice](Codility/minAvgTwoSlice.js) - 100%
 - [missingInteger](Codility/missingInteger.js) - 100%
+- [mushroomPicker](Codility/mushroomPicker.js) - 100%
+- [nesting](Codility/nesting.js) - 87%
