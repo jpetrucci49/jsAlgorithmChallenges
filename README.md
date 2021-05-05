@@ -32,3 +32,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [missingInteger](Codility/missingInteger.js) - 100%
 - [mushroomPicker](Codility/mushroomPicker.js) - 100%
 - [nesting](Codility/nesting.js) - 87%
+- [mushroomPicker](Codility/passingCars.js) - 100%
+- [permCheck](Codility/permCheck.js) - 100%
