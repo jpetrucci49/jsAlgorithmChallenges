@@ -34,3 +34,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [nesting](Codility/nesting.js) - 87%
 - [mushroomPicker](Codility/passingCars.js) - 100%
 - [permCheck](Codility/permCheck.js) - 100%
+- [sorting](Codility/sorting.js)
+- [stoneWall](Codility/stoneWall.js) - 100%
