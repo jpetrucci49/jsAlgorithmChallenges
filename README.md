@@ -36,3 +36,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [permCheck](Codility/permCheck.js) - 100%
 - [sorting](Codility/sorting.js)
 - [stoneWall](Codility/stoneWall.js) - 100%
+- [tapeEquilibrium](Codility/tapeEquilibrium.js) - 100%
+- [triangle](Codility/triangle.js) - 100%
