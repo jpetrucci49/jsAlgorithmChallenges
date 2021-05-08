@@ -38,3 +38,9 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [stoneWall](Codility/stoneWall.js) - 100%
 - [tapeEquilibrium](Codility/tapeEquilibrium.js) - 100%
 - [triangle](Codility/triangle.js) - 100%
+
+### FreeCodeCamp:
+
+#### Algorithms
+
+- [bubbleSort](freeCodeCamp/algorithms/bubbleSort.js)
