@@ -44,3 +44,6 @@ These JavaScript challenges will be taken from multiple online resources, and st
 #### Algorithms
 
 - [bubbleSort](freeCodeCamp/algorithms/bubbleSort.js)
+- [insertionSort](freeCodeCamp/algorithms/insertionSort.js)
+- [mergeSort](freeCodeCamp/algorithms/mergeSort.js)
+- [noRepeats](freeCodeCamp/algorithms/noRepeats.js)
