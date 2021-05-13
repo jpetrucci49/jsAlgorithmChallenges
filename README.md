@@ -49,3 +49,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [noRepeats](freeCodeCamp/algorithms/noRepeats.js)
 - [pairwise](freeCodeCamp/algorithms/pairwise.js)
 - [quickSort](freeCodeCamp/algorithms/quickSort.js)
+- [selectionSort](freeCodeCamp/algorithms/selectionSort.js)
+- [symmetricDifference](freeCodeCamp/algorithms/symmetricDifference.js)
