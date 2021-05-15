@@ -51,3 +51,8 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [quickSort](freeCodeCamp/algorithms/quickSort.js)
 - [selectionSort](freeCodeCamp/algorithms/selectionSort.js)
 - [symmetricDifference](freeCodeCamp/algorithms/symmetricDifference.js)
+
+#### Data Structures
+
+- [createAndAddToSets](freeCodeCamp/dataStructures/createAndAddToSets.js)
+- [createCircularQueue](freeCodeCamp/dataStructures/createCircularQueue.js)
