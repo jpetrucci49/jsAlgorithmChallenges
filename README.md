@@ -56,3 +56,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 
 - [createAndAddToSets](freeCodeCamp/dataStructures/createAndAddToSets.js)
 - [createCircularQueue](freeCodeCamp/dataStructures/createCircularQueue.js)
+- [createDoublyLinkedList](freeCodeCamp/dataStructures/createDoublyLinkedList.js)
+- [createHashTable](freeCodeCamp/dataStructures/createHashTable.js)
