@@ -60,3 +60,5 @@ These JavaScript challenges will be taken from multiple online resources, and st
 - [createHashTable](freeCodeCamp/dataStructures/createHashTable.js)
 - [createMapDataStructure](freeCodeCamp/dataStructures/createMapDataStructure.js)
 - [createPriorityQueueClass](freeCodeCamp/dataStructures/createPriorityQueueClass.js)
+- [createQueueClass](freeCodeCamp/dataStructures/createQueueClass.js)
+- [createSetClass](freeCodeCamp/dataStructures/createSetClass.js)
